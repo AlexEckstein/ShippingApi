@@ -94,7 +94,7 @@ namespace WPPDataModel.ShippingSystem.DataAccess
     'boxweight': 3.6,
     'boxcost': 0,
     'boxenabled': 1,
-    'boxmaxweight': 50,
+    'boxmaxweight': 49,
     'boxmaxvolume': 4480
   },
   {
@@ -107,7 +107,7 @@ namespace WPPDataModel.ShippingSystem.DataAccess
     'boxweight': 3.95,
     'boxcost': 0,
     'boxenabled': 1,
-    'boxmaxweight': 69,
+    'boxmaxweight': 49,
     'boxmaxvolume': 6336
   },
   {
@@ -146,7 +146,7 @@ namespace WPPDataModel.ShippingSystem.DataAccess
     'boxweight': 4.3,
     'boxcost': 0,
     'boxenabled': 1,
-    'boxmaxweight': 69,
+    'boxmaxweight': 49,
     'boxmaxvolume': 6912
   },
   {
@@ -159,7 +159,7 @@ namespace WPPDataModel.ShippingSystem.DataAccess
     'boxweight': 4.1,
     'boxcost': 0,
     'boxenabled': 1,
-    'boxmaxweight': 52,
+    'boxmaxweight': 49,
     'boxmaxvolume': 5184
   },
   {
