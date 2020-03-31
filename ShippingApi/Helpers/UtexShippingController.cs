@@ -1418,9 +1418,17 @@ namespace ClientSite.controllers
                 case CONST_SALE:
                 case CONST_POP:
                     LogShippingMessage("PostRateHandling", String.Format("Ground Pct Markup: {0}", configSaleGroundPctMarkup), CONST_INFO);
-                    LogShippingMessage("PostRateHandling", String.Format("Air Pct Markup: {0}", configSaleAirPctMarkup), CONST_INFO);
+                    if(shippingResult.totalWeight > 49)
+                    {
+                        shippingResult.groundRate *= 1.1M;
+                        LogShippingMessage("PostRateHandling", String.Format("Air Pct Markup: {0}", 1.10M), CONST_INFO);
+                    }
+                    else
+                    {
+                        shippingResult.groundRate *= configSaleGroundPctMarkup;
+                        LogShippingMessage("PostRateHandling", String.Format("Air Pct Markup: {0}", configSaleGroundPctMarkup), CONST_INFO);
+                    }
 
-                    shippingResult.groundRate *= configSaleGroundPctMarkup;
                     shippingResult.twoDayRate *= 1.0M; //configSaleAirPctMarkup;
                     shippingResult.nextDayRate *= 1.0M;
                     shippingResult.premiumRate1 *= 1.0M;
